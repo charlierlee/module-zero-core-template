@@ -20,6 +20,9 @@ namespace AbpCompanyName.AbpProjectName.EntityFrameworkCore.Seed
         public static void SeedHostDb(AbpProjectNameDbContext context)
         {
             context.SuppressAutoSetTenantId = true;
+            
+            //Create Db if not exists
+            context.Database.EnsureCreated();
 
             // Host seed
             new InitialHostDbBuilder(context).Create();

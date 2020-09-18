@@ -75,9 +75,17 @@
       </div>
     </div>
   </form>
-  <p *ngIf="isSelfRegistrationAllowed" class="mb-1">
-    <a [routerLink]="['../register']">
-      <i class="fa fa-plus-circle"></i> {{ "Register" | localize }}
-    </a>
-  </p>
+  <div class="row m-t-15 m-b--20" *ngIf="isSelfRegistrationAllowed">
+    <div class="col-xs-6">
+        <a [routerLink]="['../register']">{{ "Register" | localize }}</a>
+    </div>
+    <div class="col-xs-6 text-right">
+        <a (click)="resetPassword()">{{ "RecoverPassword" | localize }}</a>
+    </div>
+  </div>
+  <div class="row m-t-15 m-b--20" *ngIf="!isSelfRegistrationAllowed">
+    <div class="col-xs-6 text-right">
+        <a (click)="resetPassword()">{{ "RecoverPassword" | localize }}</a>
+    </div>
+  </div>
 </div>

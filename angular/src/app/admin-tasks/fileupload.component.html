@@ -1,0 +1,10 @@
+<div class="col-md-3 profile-image-edit">
+  <label class="hoverable" for="fileInput">
+    Upload Db:<br/>
+   <span class="hover-text">Choose file</span>
+   <span class="background"></span>
+  </label>
+  <br />
+  <input #fileInput id="fileInput" type='file' (click)="fileInput.value = null" value="" 
+    (change)="upload($event.target)">
+ </div>

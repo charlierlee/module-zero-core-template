@@ -3,10 +3,10 @@ version: '2'
 services:
 
     abp_mvc:
-        image: abp/mvc
+        image: dockerusername/mvc
         environment:
             - ASPNETCORE_ENVIRONMENT=Staging
         ports:
-            - "9903:80"
+            - "9903:21021"
         volumes:
             - "./Mvc-Logs:/app/App_Data/Logs"

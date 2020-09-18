@@ -18,6 +18,10 @@ import { AccountFooterComponent } from './layout/account-footer.component';
 import { TenantChangeComponent } from './tenant/tenant-change.component';
 import { TenantChangeDialogComponent } from './tenant/tenant-change-dialog.component';
 
+//reset password
+import { ResetPasswordDialogComponent } from './reset-password/reset-password-dialog.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+
 @NgModule({
     imports: [
         CommonModule,
@@ -39,10 +43,15 @@ import { TenantChangeDialogComponent } from './tenant/tenant-change-dialog.compo
         // tenant
         TenantChangeComponent,
         TenantChangeDialogComponent,
+        // reset password
+        ResetPasswordComponent,
+        ResetPasswordDialogComponent,
     ],
     entryComponents: [
         // tenant
-        TenantChangeDialogComponent
+        TenantChangeDialogComponent,
+        // reset password
+        ResetPasswordDialogComponent
     ]
 })
 export class AccountModule {

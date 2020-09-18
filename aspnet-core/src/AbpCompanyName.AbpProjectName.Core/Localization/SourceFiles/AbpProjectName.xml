@@ -116,5 +116,11 @@
     <text name="Clear">Clear</text>
     <text name="ResetPasswordStepOneInfo">1. Enter your administrator password</text>
     <text name="ResetPasswordStepTwoInfo">2. Copy this random password so you can send it to the user</text>
+    <text name="ChangeMyPassword">Change my password</text>
+    <text name="RecoverPassword">Recover password</text>
+    <text name="PasswordResetEmailSubject">[AbpProjectName] Reset your password</text>
+    <text name="PasswordResetEmailBody">Click &lt;a href="{0}/index.html#/account/reset-password/{2}/{3}/{1}" target="_blank"&gt;here&lt;/a&gt; to reset your password.</text>
+    <text name="PasswordResetEmailSentSucessfullyTitle">Email sent sucessfully!</text>
+    <text name="PasswordResetEmailSentSucessfullyMessage">Check your inbox to reset your password.</text>
   </texts>
 </localizationDictionary>

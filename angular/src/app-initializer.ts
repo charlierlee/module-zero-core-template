@@ -6,6 +6,7 @@ import * as _ from 'lodash';
 import { AppConsts } from '@shared/AppConsts';
 import { AppSessionService } from '@shared/session/app-session.service';
 import { environment } from './environments/environment';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
@@ -28,8 +29,16 @@ export class AppInitializer {
             abp.event.trigger('abp.dynamicScriptsInitialized');
             // do not use constructor injection for AppSessionService
             const appSessionService = this._injector.get(AppSessionService);
+            const _router: Router = this._injector.get(Router);
             appSessionService.init().then(
               (result) => {
+                if(_router.url.indexOf('/account/login') > -1) {
+                  _router.navigate(['/app/home']);
+                }
+                else
+                {
+                    _router.initialNavigation();
+                }
                 abp.ui.clearBusy();
                 if (this.shouldLoadLocale()) {
                   const angularLocale = this.convertAbpLocaleToAngularLocale(
@@ -154,7 +163,7 @@ export class AppInitializer {
 
   private getApplicationConfig(appRootUrl: string, callback: () => void) {
     this._httpClient
-      .get<any>(`${appRootUrl}assets/${environment.appConfig}`, {
+      .get<any>(`${appRootUrl.replace("/index.html","")}/assets/${environment.appConfig}`, {
         headers: {
           'Abp.TenantId': `${abp.multiTenancy.getTenantIdCookie()}`,
         },

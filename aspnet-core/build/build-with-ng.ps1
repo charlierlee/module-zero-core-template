@@ -25,7 +25,7 @@ dotnet publish --output (Join-Path $outputFolder "Host")
 
 Set-Location $ngFolder
 & yarn
-& ng build --prod
+& ng build --base-href /index.html
 Copy-Item (Join-Path $ngFolder "dist") (Join-Path $outputFolder "ng") -Recurse
 Copy-Item (Join-Path $ngFolder "Dockerfile") (Join-Path $outputFolder "ng")
 
@@ -39,14 +39,14 @@ $ngConfigPath = Join-Path $outputFolder "ng/assets/appconfig.json"
 # Host
 Set-Location (Join-Path $outputFolder "Host")
 
-docker rmi abp/host -f
-docker build -t abp/host .
+docker rmi dockerusername/host -f
+docker build -t dockerusername/host .
 
 # Angular UI
 Set-Location (Join-Path $outputFolder "ng")
 
-docker rmi abp/ng -f
-docker build -t abp/ng .
+docker rmi dockerusername/ng -f
+docker build -t dockerusername/ng .
 
 ## DOCKER COMPOSE FILES #######################################################
 

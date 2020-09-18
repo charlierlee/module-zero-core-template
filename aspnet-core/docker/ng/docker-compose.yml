@@ -3,7 +3,7 @@ version: '2'
 services:
 
     abp_host:
-        image: abp/host
+        image: dockerusername/host
         environment:
             - ASPNETCORE_ENVIRONMENT=Staging
         ports:
@@ -12,6 +12,6 @@ services:
             - "./Host-Logs:/app/App_Data/Logs"
 
     abp_ng:
-        image: abp/ng
+        image: dockerusername/ng
         ports:
             - "9902:80"

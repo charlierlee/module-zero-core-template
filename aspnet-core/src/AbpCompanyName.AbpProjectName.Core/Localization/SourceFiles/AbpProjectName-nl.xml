@@ -84,5 +84,11 @@
     <text name="EditUser">Bewerk gebruiker</text>
     <text name="TenantIdIsNotActive{0}">HuurderId {0} is niet actief</text>
     <text name="UnknownTenantId{0}">Onbekend huurderId {0}</text>
+    <text name="ChangeMyPassword">Change my password</text>
+    <text name="RecoverPassword">Recover password</text>
+    <text name="PasswordResetEmailSubject">[AbpProjectName] Reset your password</text>
+    <text name="PasswordResetEmailBody">Click &lt;a href="{0}/index.html#/account/reset-password/{2}/{3}/{1}" target="_blank"&gt;here&lt;/a&gt; to reset your password.</text>
+    <text name="PasswordResetEmailSentSucessfullyTitle">Email sent sucessfully!</text>
+    <text name="PasswordResetEmailSentSucessfullyMessage">Check your inbox to reset your password.</text>
   </texts>
 </localizationDictionary>

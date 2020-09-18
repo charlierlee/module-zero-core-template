@@ -1,0 +1,6 @@
+<p>Download File</p>
+<button (click)="generateDb()">Generate Link</button>
+<br/>
+<a target="_blank" href="{{baseUrl}}/File/DownloadDbFile?token={{_file.token}}">{{_file.filename}}</a>
+<hr/>
+<app-fileupload></app-fileupload>

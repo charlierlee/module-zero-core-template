@@ -1,6 +1,6 @@
 {
-  "remoteServiceBaseUrl": "http://localhost:21021",
-  "appBaseUrl": "http://localhost:4200",
+  "remoteServiceBaseUrl": "https://abphost.azurewebsites.net",
+  "appBaseUrl": "https://abpclient.azurewebsites.net",
   "localeMappings": [
     {
       "from": "pt-BR",

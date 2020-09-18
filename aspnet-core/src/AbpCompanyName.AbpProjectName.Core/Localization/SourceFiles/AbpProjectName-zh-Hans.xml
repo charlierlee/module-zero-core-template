@@ -97,7 +97,12 @@
     <text name="DeleteTenantConfirm">确认删除该租户？</text>
     <text name="EditTenant">编辑租户</text>
     <text name="SearchWithThreeDot">搜索...</text>
-    
+    <text name="ChangeMyPassword">Change my password</text>
+    <text name="RecoverPassword">Recover password</text>
+    <text name="PasswordResetEmailSubject">[AbpProjectName] Reset your password</text>
+    <text name="PasswordResetEmailBody">Click &lt;a href="{0}/index.html#/account/reset-password/{2}/{3}/{1}" target="_blank"&gt;here&lt;/a&gt; to reset your password.</text>
+    <text name="PasswordResetEmailSentSucessfullyTitle">Email sent sucessfully!</text>
+    <text name="PasswordResetEmailSentSucessfullyMessage">Check your inbox to reset your password.</text>
   </texts>
 </localizationDictionary>
 

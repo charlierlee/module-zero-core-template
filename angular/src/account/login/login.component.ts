@@ -3,6 +3,8 @@ import { AbpSessionService } from 'abp-ng2-module';
 import { AppComponentBase } from '@shared/app-component-base';
 import { accountModuleAnimation } from '@shared/animations/routerTransition';
 import { AppAuthService } from '@shared/auth/app-auth.service';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { ResetPasswordDialogComponent } from 'account/reset-password/reset-password-dialog.component';
 
 @Component({
   templateUrl: './login.component.html',
@@ -10,15 +12,18 @@ import { AppAuthService } from '@shared/auth/app-auth.service';
 })
 export class LoginComponent extends AppComponentBase {
   submitting = false;
-
+  modalRef: BsModalRef;
   constructor(
     injector: Injector,
     public authService: AppAuthService,
-    private _sessionService: AbpSessionService
+    private _sessionService: AbpSessionService,
+    private modalService: BsModalService
   ) {
     super(injector);
   }
-
+  resetPassword(): void {
+    this.modalRef = this.modalService.show(ResetPasswordDialogComponent);
+  }
   get multiTenancySideIsTeanant(): boolean {
     return this._sessionService.tenantId > 0;
   }

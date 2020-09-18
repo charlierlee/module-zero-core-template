@@ -104,6 +104,12 @@
     <text name="AreYouSureWantToDelete">Ar tikrai norite pašalinti {0}?</text>
     <text name="StartTyping">Pradėkite rašyti</text>
     <text name="Skins">Apvalkalai</text>
-	<text name="Settings">Nustatymai</text>
+	  <text name="Settings">Nustatymai</text>
+    <text name="ChangeMyPassword">Change my password</text>
+    <text name="RecoverPassword">Recover password</text>
+    <text name="PasswordResetEmailSubject">[AbpProjectName] Reset your password</text>
+    <text name="PasswordResetEmailBody">Click &lt;a href="{0}/index.html#/account/reset-password/{2}/{3}/{1}" target="_blank"&gt;here&lt;/a&gt; to reset your password.</text>
+    <text name="PasswordResetEmailSentSucessfullyTitle">Email sent sucessfully!</text>
+    <text name="PasswordResetEmailSentSucessfullyMessage">Check your inbox to reset your password.</text>
   </texts>
 </localizationDictionary>
