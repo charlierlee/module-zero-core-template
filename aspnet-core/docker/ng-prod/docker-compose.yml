@@ -7,7 +7,7 @@ services:
         environment:
             - ASPNETCORE_ENVIRONMENT=Production
         ports:
-            - "9901:80"
+            - "9901:8080"
         volumes:
             - "./Host-Logs:/app/App_Data/Logs"
 
