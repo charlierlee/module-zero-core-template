@@ -35,3 +35,14 @@ Copy-Item (Join-Path $slnFolder "docker/mvc/*.*") $outputFolder
 ## FINALIZE ###################################################################
 
 Set-Location $outputFolder
+
+cd Mvc
+#init -- comment out after first run
+git init
+git config --global credential.helper 'store --file ~/.my-git-credentials'
+git remote add azure 'https://azuredeploymentusername@abphost.scm.azurewebsites.net:443/abphost.git'
+
+#not init
+git add .
+git commit -m "deployment commit message"
+git push azure master --force

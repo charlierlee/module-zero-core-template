@@ -4,6 +4,7 @@ Also note that docker container for the host in azure are ephemeral, and reload 
 
 Deployment Steps:
 Backup Db on production site
+find/replace azuredeploymentusername with your azure kudu username
 find/replace abpclient with your angular client hostname
 find/replace abphost with your asp.net server hostname
 find/replace dockerusername with your docker user name
