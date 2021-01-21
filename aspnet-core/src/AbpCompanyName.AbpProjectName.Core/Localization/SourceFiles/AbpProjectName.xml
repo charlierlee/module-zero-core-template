@@ -122,5 +122,6 @@
     <text name="PasswordResetEmailBody">Click &lt;a href="{0}/index.html#/account/reset-password/{2}/{3}/{1}" target="_blank"&gt;here&lt;/a&gt; to reset your password.</text>
     <text name="PasswordResetEmailSentSucessfullyTitle">Email sent sucessfully!</text>
     <text name="PasswordResetEmailSentSucessfullyMessage">Check your inbox to reset your password.</text>
+    <text name="UsersActivation">Users activation</text>
   </texts>
 </localizationDictionary>
