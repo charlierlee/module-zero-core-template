@@ -98,8 +98,11 @@ export class AppAuthService {
         if (initialUrl.indexOf('/login') > 0) {
             initialUrl = AppConsts.appBaseUrl;
         }
-
+        
         location.href = initialUrl;
+        //when using hash based routing we need to randomize a url param to force the redirect
+        //see imports: [RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy', initialNavigation: 'disabled', useHash:true })],
+        location.href = initialUrl.replace('index.html','index.html?random=' + Math.random());
     }
 
     private clear(): void {
