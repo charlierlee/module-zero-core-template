@@ -55,6 +55,11 @@
     <text name="Optional" value="オプション" />
     <text name="ChangeMyPassword">Change my password</text>
     <text name="RecoverPassword">Recover password</text>
+    <text name="NewPasswordConfirmation">Confirm New Password</text>
+    <text name="SendEmail">Send Email</text>
+    <text name="PasswordTooShort">Password must be at least 8 characters</text>
+    <text name="PasswordMismatch">Password Mismatch</text>
+    <text name="PasswordPatternErrorMessage">Password must contain at least 1 number, 1 uppercase, and 1 special character</text>
     <text name="PasswordResetEmailSubject">[AbpProjectName] Reset your password</text>
     <text name="PasswordResetEmailBody">Click &lt;a href="{0}/index.html#/account/reset-password/{2}/{3}/{1}" target="_blank"&gt;here&lt;/a&gt; to reset your password.</text>
     <text name="PasswordResetEmailSentSucessfullyTitle">Email sent sucessfully!</text>

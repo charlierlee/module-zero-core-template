@@ -80,12 +80,12 @@
         <a [routerLink]="['../register']">{{ "Register" | localize }}</a>
     </div>
     <div class="col-xs-6 text-right">
-        <a (click)="resetPassword()">{{ "RecoverPassword" | localize }}</a>
+      <a style="cursor: pointer;" (click)="resetPassword()">{{ "RecoverPassword" | localize }}</a>
     </div>
   </div>
   <div class="row m-t-15 m-b--20" *ngIf="!isSelfRegistrationAllowed">
     <div class="col-xs-6 text-right">
-        <a (click)="resetPassword()">{{ "RecoverPassword" | localize }}</a>
+      <a style="cursor: pointer;" (click)="resetPassword()">{{ "RecoverPassword" | localize }}</a>
     </div>
   </div>
 </div>

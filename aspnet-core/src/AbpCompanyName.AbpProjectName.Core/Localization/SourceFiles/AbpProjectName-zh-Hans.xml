@@ -57,6 +57,7 @@
     <text name="PasswordRequireNonAlphanumeric">密码至少需要包含一个特殊字符（非字母或数字的字符）.</text>
     <text name="PasswordRequireUppercase">密码至少需要一位是A到Z的大写字母.</text>
     <text name="PasswordTooShort">密码长度太短</text>
+    <text name="PasswordMismatch">Password Mismatch</text>
     <text name="UserName">用户名</text>
     <text name="Name">名称</text>
     <text name="IsActive">是否启用</text>
@@ -99,6 +100,9 @@
     <text name="SearchWithThreeDot">搜索...</text>
     <text name="ChangeMyPassword">Change my password</text>
     <text name="RecoverPassword">Recover password</text>
+    <text name="NewPasswordConfirmation">Confirm New Password</text>
+    <text name="SendEmail">Send Email</text>
+    <text name="PasswordPatternErrorMessage">Password must contain at least 1 number, 1 uppercase, and 1 special character</text>
     <text name="PasswordResetEmailSubject">[AbpProjectName] Reset your password</text>
     <text name="PasswordResetEmailBody">Click &lt;a href="{0}/index.html#/account/reset-password/{2}/{3}/{1}" target="_blank"&gt;here&lt;/a&gt; to reset your password.</text>
     <text name="PasswordResetEmailSentSucessfullyTitle">Email sent sucessfully!</text>
