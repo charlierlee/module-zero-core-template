@@ -7,6 +7,6 @@ services:
         environment:
             - ASPNETCORE_ENVIRONMENT=Staging
         ports:
-            - "9903:21021"
+            - "9903:44311"
         volumes:
             - "./Mvc-Logs:/app/App_Data/Logs"

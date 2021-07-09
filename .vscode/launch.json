@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/aspnet-core/src/AbpCompanyName.AbpProjectName.Web.Host/bin/Debug/netcoreapp3.1/AbpCompanyName.AbpProjectName.Web.Host.dll",
+            "program": "${workspaceFolder}/aspnet-core/src/AbpCompanyName.AbpProjectName.Web.Host/bin/Debug/net5.0/AbpCompanyName.AbpProjectName.Web.Host.dll",
             "args": [],
             "cwd": "${workspaceFolder}/aspnet-core/src/AbpCompanyName.AbpProjectName.Web.Host",
             "stopAtEntry": false,

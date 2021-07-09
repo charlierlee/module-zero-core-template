@@ -17,6 +17,7 @@
     <OpenApiGenerateDocuments>false</OpenApiGenerateDocuments>
     <RootNamespace>AbpCompanyName.AbpProjectName</RootNamespace>
     <LangVersion>7.2</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,9 +28,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
-    <PackageReference Include="Abp.AspNetCore" Version="6.2.0" />
-    <PackageReference Include="Abp.ZeroCore" Version="6.2.0" />
-    <PackageReference Include="Abp.AspNetCore.SignalR" Version="6.2.0" />
+    <PackageReference Include="Abp.AspNetCore" Version="6.4.0-rc1" />
+    <PackageReference Include="Abp.ZeroCore" Version="6.4.0-rc1" />
+    <PackageReference Include="Abp.AspNetCore.SignalR" Version="6.4.0-rc1" />
   </ItemGroup>
 
 </Project>
